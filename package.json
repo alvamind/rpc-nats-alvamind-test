@@ -6,12 +6,16 @@
     "typescript": "latest"
   },
   "scripts": {
+    "commit": "commit",
+    "source": "generate-source output=source.md exclude=dist/,README.md,nats-rpc.test.ts,rpc-nats-alvamind-1.0.0.tgz,.gitignore",
+    "reinstall": "clean && bun install",
     "dev": "bun run src/index.ts",
     "build": "tsc",
     "generate-types": "bun run rpc-nats-alvamind generate ./src/services ./src/generated/exposed-methods.d.ts"
   },
   "type": "module",
   "dependencies": {
-    "rpc-nats-alvamind": "/home/realme-book/Project/code/rpc-nats-alvamind/rpc-nats-alvamind-1.0.0.tgz"
+    "alvamind-tools": "^1.0.10",
+    "rpc-nats-alvamind": "file:/home/realme-book/Project/code/rpc-nats-alvamind/rpc-nats-alvamind-1.0.9.tgz"
   }
 }
