@@ -1,0 +1,17 @@
+{
+  "name": "rpc-nats-alvamind-test-project",
+  "version": "1.0.0",
+  "devDependencies": {
+    "bun-types": "latest",
+    "typescript": "latest"
+  },
+  "scripts": {
+    "dev": "bun run src/index.ts",
+    "build": "tsc",
+    "generate-types": "bun run rpc-nats-alvamind generate ./src/services ./src/generated/exposed-methods.d.ts"
+  },
+  "type": "module",
+  "dependencies": {
+    "rpc-nats-alvamind": "/home/realme-book/Project/code/rpc-nats-alvamind/rpc-nats-alvamind-1.0.0.tgz"
+  }
+}
